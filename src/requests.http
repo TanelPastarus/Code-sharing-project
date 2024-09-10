@@ -1,0 +1,22 @@
+POST http://localhost:8889/api/code/new
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "code": "test c",
+  "time" : 999999,
+  "views" : 2
+}
+
+###
+
+GET http://localhost:8889/code
+Content-Type: text/html
+Connection: Keep-Alive
+
+###
+GET http://localhost:8889/api/code/9d42e6fc-10c3-40a6-82a7-7bc76d07c002
+Content-Type: text/html
+Connection: Keep-Alive
